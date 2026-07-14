@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Renders originals en PNG de gran mida (el web usa assets/pfg/render1-3.jpg)
+assets/pfg/Render*.png

@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Benet Arquitectura — Estudi d'arquitectura</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Benet Arquitectura, inici">
+      <span class="mark" aria-hidden="true"></span> Benet&nbsp;Arquitectura
+    </a>
+    <nav class="navlinks" aria-label="Principal">
+      <a href="#work">Projectes</a>
+      <a href="#studio">Estudi</a>
+      <a href="#approach">Enfocament</a>
+      <a href="#journal">Diari</a>
+    </nav>
+    <div class="navright">
+      <button class="themebtn" id="theme" aria-label="Canviar entre tema clar i fosc">◑</button>
+      <a class="btn btn-dark" href="#contact">Contacte</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap">
+    <h1 class="type" data-text="Espais que retenen la llum, el temps i el lloc."></h1>
+    <p class="lede">Benet Arquitectura és un estudi d'arquitectura que projecta habitatges, espais culturals i rehabilitacions — amb contenció, llum natural i un profund respecte pel context.</p>
+    <div class="cta">
+      <a class="btn btn-dark" href="#work">Veure projectes</a>
+      <a class="btn btn-ghost" href="#contact">Comença un projecte</a>
+    </div>
+
+    <div class="stage" id="stage" aria-label="Gràfic animat de l'estudi">
+      <canvas id="c-hero"></canvas>
+      <div class="stage-cap">
+        <h3>De la presa de dades a l'estança acabada — una sola línia de pensament.</h3>
+        <span>Des de 2014 · Barcelona</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATEMENT (word reveal) ============ -->
+  <section class="gap wrap statement">
+    <p class="reveal">Projectem els edificis a partir de com viu realment la gent — primer la llum, materials que envelleixen bé i plantes que callen perquè <span class="accent">la vida faci soroll.</span></p>
+  </section>
+
+  <!-- ============ SELECTED WORK ============ -->
+  <section id="work" class="wrap gap-sm">
+    <p class="eyebrow fade">Projectes seleccionats</p>
+
+    <article class="feat gallery-feat fade" id="cuina">
+      <div class="txt">
+        <p class="eyebrow">Interiorisme · 2020 · Lleida</p>
+        <h2>Reforma integral d'un habitatge a Lleida</h2>
+        <p class="desc">Una cuina oberta en blanc total: illa de quars amb veta de marbre, il·luminació lineal càlida sota els mòduls i taburets de malla de colors. El paviment de bambú suavitza el conjunt minimalista.</p>
+        <dl class="meta">
+          <div><dt>Tipus</dt><dd>Reforma integral d'habitatge</dd></div>
+          <div><dt>Ubicació</dt><dd>Lleida</dd></div>
+          <div><dt>Any</dt><dd>2020</dd></div>
+        </dl>
+        <a class="link" href="cuina.html">Veure el projecte <span class="arw">→</span></a>
+        <p class="hint">O fes clic a una foto per ampliar-la.</p>
+      </div>
+      <div class="media">
+        <div class="gallery">
+          <button class="gitem tall" data-i="0" aria-label="Ampliar foto 1 — illa i taburets">
+            <img src="assets/abk/Foto1.jpg" alt="Cuina reformada: illa de quars amb veta de marbre i taburets de malla grocs, negres i blancs" loading="lazy" />
+            <span class="expand" aria-hidden="true">⤢</span>
+          </button>
+          <button class="gitem" data-i="1" aria-label="Ampliar foto 2 — taula i llums penjants">
+            <img src="assets/abk/Foto2.jpg" alt="Vista de la taula amb els llums penjants i la porta blava al fons" loading="lazy" />
+            <span class="expand" aria-hidden="true">⤢</span>
+          </button>
+          <button class="gitem" data-i="2" aria-label="Ampliar foto 3 — mòduls i placa de cocció">
+            <img src="assets/abk/Foto3.jpg" alt="Detall dels mòduls blancs, la placa de cocció i la il·luminació lineal" loading="lazy" />
+            <span class="expand" aria-hidden="true">⤢</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="feat rev fade" id="barcelona">
+      <div class="txt">
+        <p class="eyebrow">Residencial · 2025 · Barcelona</p>
+        <h2>Reforma integral d'habitatge a Barcelona</h2>
+        <p class="desc">Un habitatge antic i compartimentat, buidat fins a l'estructura i transformat en una casa diàfana, blanca i lluminosa.</p>
+        <dl class="meta">
+          <div><dt>Tipus</dt><dd>Reforma integral</dd></div>
+          <div><dt>Ubicació</dt><dd>Barcelona</dd></div>
+          <div><dt>Any</dt><dd>2025</dd></div>
+        </dl>
+        <a class="link" href="barcelona.html">Veure el projecte <span class="arw">→</span></a>
+      </div>
+      <a class="media cover" href="barcelona.html" aria-label="Veure el projecte: Reforma integral d'habitatge a Barcelona">
+        <img src="assets/barcelona1/IMG_0934.JPG" alt="Cuina-menjador blanca acabada de la reforma a Barcelona" loading="lazy" />
+      </a>
+    </article>
+
+    <article class="feat fade" id="barcelona2">
+      <div class="txt">
+        <p class="eyebrow">Residencial · 2020 · Barcelona</p>
+        <h2>Reforma integral d'un habitatge a Barcelona</h2>
+        <p class="desc">Reforma completa d'un pis: una planta oberta que enllaça menjador, sala d'estar i cuina, amb paviment de fusta i acabats càlids.</p>
+        <dl class="meta">
+          <div><dt>Tipus</dt><dd>Reforma integral</dd></div>
+          <div><dt>Ubicació</dt><dd>Barcelona</dd></div>
+          <div><dt>Any</dt><dd>2020</dd></div>
+        </dl>
+        <a class="link" href="barcelona2.html">Veure el projecte <span class="arw">→</span></a>
+      </div>
+      <a class="media cover" href="barcelona2.html" aria-label="Veure el projecte: Reforma integral d'un habitatge a Barcelona (2020)">
+        <img src="assets/barcelona2/detall/IMG_5461.jpg" alt="Sala d'estar reformada amb parquet i llums cònics" loading="lazy" />
+      </a>
+    </article>
+
+    <article class="feat rev fade">
+      <div class="txt">
+        <p class="eyebrow">Rehabilitació · 2022 · Barcelona</p>
+        <h2>La Foneria</h2>
+        <p class="desc">Un antic taller metal·lúrgic convertit en tallers i una cafeteria. Nous elements de roure s'insereixen amb lleugeresa dins la closca de maó existent, conservant-ne cada marca honesta.</p>
+        <dl class="meta">
+          <div><dt>Tipus</dt><dd>Ús mixt</dd></div>
+          <div><dt>Superfície</dt><dd>1.100 m²</dd></div>
+          <div><dt>Estat</dt><dd>Acabat</dd></div>
+        </dl>
+        <a class="link" href="#">Veure el projecte <span class="arw">→</span></a>
+      </div>
+      <div class="media shot" style="--h1:#e08a5a;--h2:#7b61ff">
+        <div class="shot-glow"></div>
+        <div class="shot-frame"><div class="shot-label">La Foneria<em>substitueix per una fotografia</em></div></div>
+      </div>
+    </article>
+
+    <article class="feat gallery-feat fade" id="generalitat">
+      <div class="txt">
+        <p class="eyebrow">Equipament públic · PFG · Lleida</p>
+        <h2>Seu de la Generalitat a Lleida</h2>
+        <p class="desc">Proposta per a una seu administrativa: un sòcol públic porticat i un gran atri central, amb escala helicoidal i arbrat que travessa totes les plantes, entre estructura de formigó i fusta.</p>
+        <dl class="meta">
+          <div><dt>Tipus</dt><dd>Equipament públic</dd></div>
+          <div><dt>Ubicació</dt><dd>Lleida</dd></div>
+          <div><dt>Àmbit</dt><dd>Projecte final de grau</dd></div>
+        </dl>
+        <p class="hint">Fes clic a una imatge per ampliar-la.</p>
+      </div>
+      <div class="media">
+        <div class="gallery">
+          <button class="gitem tall" aria-label="Ampliar render — atri central">
+            <img src="assets/pfg/render1.jpg" alt="Atri central amb escala helicoidal blanca i arbre, entre plantes de fusta" loading="lazy" />
+            <span class="expand" aria-hidden="true">⤢</span>
+          </button>
+          <button class="gitem" aria-label="Ampliar render — vista exterior">
+            <img src="assets/pfg/render3.jpg" alt="Vista exterior de l'edifici, amb el volum elevat sobre pilars" loading="lazy" />
+            <span class="expand" aria-hidden="true">⤢</span>
+          </button>
+          <button class="gitem" aria-label="Ampliar render — pati porticat">
+            <img src="assets/pfg/render2.jpg" alt="Pati interior porticat amb façana de fusta i arbres" loading="lazy" />
+            <span class="expand" aria-hidden="true">⤢</span>
+          </button>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <section class="gap-sm marquee" aria-hidden="true">
+    <div class="marquee-row" id="mrow"></div>
+  </section>
+
+  <!-- ============ STUDIO / PRACTICE CAROUSEL ============ -->
+  <section id="studio" class="wrap gap-sm">
+    <div class="head-row">
+      <div>
+        <p class="eyebrow fade">L'estudi</p>
+        <h2 class="fade">Què fem</h2>
+      </div>
+      <div class="arrows fade">
+        <button id="prev" aria-label="Anterior">←</button>
+        <button id="next" aria-label="Següent">→</button>
+      </div>
+    </div>
+    <div class="carousel" id="carousel">
+      <div class="pcard" style="--h1:#3b6ef6;--h2:#7b61ff">
+        <div class="pc-bg"></div>
+        <div class="pc-in"><h3 class="ptype" data-text="Residencial"></h3>
+          <p>Habitatges nous i reformes projectats al voltant de la llum, la intimitat i la manera com una família viu el dia.</p></div>
+      </div>
+      <div class="pcard" style="--h1:#7b61ff;--h2:#e08a5a">
+        <div class="pc-bg"></div>
+        <div class="pc-in"><h3 class="ptype" data-text="Cultural"></h3>
+          <p>Pavellons, galeries i espais cívics — petjades modestes que ofereixen un lloc on trobar-se.</p></div>
+      </div>
+      <div class="pcard" style="--h1:#e08a5a;--h2:#3b6ef6">
+        <div class="pc-bg"></div>
+        <div class="pc-in"><h3 class="ptype" data-text="Rehabilitació"></h3>
+          <p>Estructures antigues amb una segona vida: en conservem el caràcter i les posem al dia amb discreció.</p></div>
+      </div>
+      <div class="pcard" style="--h1:#3b6ef6;--h2:#e08a5a">
+        <div class="pc-bg"></div>
+        <div class="pc-in"><h3 class="ptype" data-text="Interiorisme"></h3>
+          <p>Estances pensades fins a l'últim tirador — materials, fusteria i llum detallats com un tot.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPROACH + STATS ============ -->
+  <section id="approach" class="wrap gap statement">
+    <p class="eyebrow fade" style="margin-bottom:26px">Enfocament</p>
+    <p class="reveal">Cada projecte comença a peu — trepitjant el lloc, llegint la llum, escoltant. El dibuix ve després, i <span class="accent">l'edifici, encara més tard.</span></p>
+    <div class="stats fade" style="margin-top:clamp(56px,8vw,90px)">
+      <div><div class="n">12</div><div class="l">Anys de trajectòria</div></div>
+      <div><div class="n">48</div><div class="l">Projectes entregats</div></div>
+      <div><div class="n">9</div><div class="l">Premis i mencions</div></div>
+      <div><div class="n">6</div><div class="l">Persones a l'estudi</div></div>
+    </div>
+  </section>
+
+  <!-- ============ CTA PANEL ============ -->
+  <section id="contact" class="wrap gap-sm">
+    <div class="ctaPanel" id="ctaPanel">
+      <canvas id="c-cta"></canvas>
+      <div class="cta-in">
+        <h2 class="type" data-text="Construïm alguna cosa que perduri."></h2>
+        <div class="cta">
+          <a class="btn btn-white" href="mailto:studio@example.com">Comença un projecte</a>
+          <a class="btn btn-outline" href="#journal">Llegeix el diari</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="journal">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h2>Creem<br>plegats.</h2>
+        <div class="fmark"><span class="mark" aria-hidden="true"></span> Benet Arquitectura — Estudi d'arquitectura</div>
+      </div>
+      <div class="col">
+        <h4>Estudi</h4>
+        <a href="#work">Projectes</a>
+        <a href="#studio">Estudi</a>
+        <a href="#approach">Enfocament</a>
+        <a href="#journal">Diari</a>
+      </div>
+      <div class="col">
+        <h4>Contacte</h4>
+        <a href="mailto:studio@example.com">Email</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">ArchDaily</a>
+      </div>
+      <div class="col">
+        <h4>On som</h4>
+        <a href="#">Carrer Exemple 12</a>
+        <a href="#">08010 Barcelona</a>
+        <a href="#">+34 000 000 000</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Benet Arquitectura. Tots els drets reservats.</span>
+      <span>Alícia Benet · Arquitecta</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de fotos">
+  <button class="lb-close" id="lbClose" aria-label="Tancar (Esc)">×</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Anterior">‹</button>
+  <img id="lbImg" src="" alt="" />
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Següent">›</button>
+  <div class="lb-cap"><span id="lbCap"></span><span class="lb-count" id="lbCount"></span></div>
+</div>
+
+<script>
+(() => {
+  "use strict";
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const clamp = (v,a,b) => Math.min(b,Math.max(a,v));
+
+  /* ---------- nav bg on scroll ---------- */
+  const hdr = document.getElementById("hdr");
+  const onScrollNav = () => hdr.classList.toggle("scrolled", scrollY > 12);
+  onScrollNav(); addEventListener("scroll", onScrollNav, {passive:true});
+
+  /* ---------- theme toggle (persisted across pages) ---------- */
+  const root = document.documentElement;
+  try { const t = localStorage.getItem("theme"); if (t) root.setAttribute("data-theme", t); } catch(e){}
+  document.getElementById("theme").addEventListener("click", () => {
+    const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+    const cur = root.getAttribute("data-theme") || (dark ? "dark" : "light");
+    const next = cur === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch(e){}
+  });
+
+  /* ---------- typewriter ---------- */
+  function typeEl(el){
+    const text = el.dataset.text;
+    el.textContent = "";
+    if (reduce){ el.textContent = text; return; }
+    const node = document.createTextNode("");
+    const caret = document.createElement("span");
+    caret.className = "caret"; caret.setAttribute("aria-hidden","true");
+    el.append(node, caret);
+    let i = 0;
+    (function step(){
+      node.data = text.slice(0, i);
+      if (i < text.length){ i++; setTimeout(step, 34 + Math.random()*46); }
+    })();
+  }
+  // hero types on load; others type when scrolled into view
+  const heroH1 = document.querySelector(".hero h1");
+  typeEl(heroH1);
+
+  const typeObs = new IntersectionObserver((ents) => {
+    ents.forEach(e => {
+      if (e.isIntersecting && !e.target.dataset.done){
+        e.target.dataset.done = "1"; typeEl(e.target); typeObs.unobserve(e.target);
+      }
+    });
+  }, {threshold:.6});
+  document.querySelectorAll(".type:not(.hero h1), .ptype, .ctaPanel h2.type")
+    .forEach(el => { if (el !== heroH1) typeObs.observe(el); });
+
+  /* ---------- scroll word reveal ---------- */
+  const reveals = [...document.querySelectorAll(".reveal")];
+  reveals.forEach(el => {
+    const html = el.innerHTML;
+    // wrap plain words while preserving the .accent span
+    const frag = document.createElement("div"); frag.innerHTML = html;
+    el.textContent = "";
+    frag.childNodes.forEach(n => {
+      if (n.nodeType === 3){
+        n.textContent.split(/(\s+)/).forEach(tok => {
+          if (/^\s+$/.test(tok)) el.append(document.createTextNode(tok));
+          else if (tok){ const s=document.createElement("span"); s.className="word"; s.textContent=tok; el.append(s); }
+        });
+      } else {
+        n.querySelectorAll ? n.textContent.split(/(\s+)/).forEach(tok=>{
+          if(/^\s+$/.test(tok)) el.append(document.createTextNode(tok));
+          else if(tok){ const s=document.createElement("span"); s.className="word accent"; s.textContent=tok; el.append(s); }
+        }) : null;
+      }
+    });
+  });
+  function updateReveal(){
+    const vh = innerHeight;
+    reveals.forEach(el => {
+      const r = el.getBoundingClientRect();
+      const start = vh*0.82, end = vh*0.30;
+      const p = clamp((start - r.top)/(start - end + r.height*0.15), 0, 1);
+      const words = el.querySelectorAll(".word");
+      const n = Math.round(p * words.length);
+      words.forEach((w,idx)=> w.classList.toggle("lit", idx < n));
+    });
+  }
+
+  /* ---------- fade-in on scroll ---------- */
+  const fadeObs = new IntersectionObserver((ents)=>{
+    ents.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); fadeObs.unobserve(e.target);} });
+  }, {threshold:.15});
+  document.querySelectorAll(".fade").forEach(el=>fadeObs.observe(el));
+
+  /* ---------- marquee content ---------- */
+  const words = ["Llum natural","Formigó","Roure","Terratzo","Estuc de calç","Acer","Context","Secció","Pati","Llindar","Rehabilitació","Pedra","Vidre","Proporció"];
+  const row = document.getElementById("mrow");
+  const set = words.map(w=>`<span class="chip"><b></b>${w}</span>`).join("");
+  row.innerHTML = set + set; // duplicate for seamless loop
+
+  /* ---------- carousel arrows ---------- */
+  const car = document.getElementById("carousel");
+  const step = () => (car.querySelector(".pcard")?.offsetWidth || 320) + 22;
+  document.getElementById("next").onclick = () => car.scrollBy({left: step(), behavior:"smooth"});
+  document.getElementById("prev").onclick = () => car.scrollBy({left:-step(), behavior:"smooth"});
+
+  /* ---------- lightbox (per-gallery, enlarge project photos) ---------- */
+  const lb = document.getElementById("lightbox");
+  if (lb){
+    const lbImg = document.getElementById("lbImg");
+    const lbCap = document.getElementById("lbCap");
+    const lbCount = document.getElementById("lbCount");
+    let group = [], idx = 0, lastFocus = null;
+    const show = i => {
+      idx = (i + group.length) % group.length;
+      lbImg.src = group[idx].src; lbImg.alt = group[idx].alt;
+      lbCap.textContent = group[idx].alt;
+      lbCount.textContent = (idx+1) + " / " + group.length;
+    };
+    const open = (items,i) => { group = items; lastFocus = document.activeElement; show(i);
+      lb.classList.add("open"); document.body.style.overflow = "hidden"; document.getElementById("lbClose").focus(); };
+    const close = () => { lb.classList.remove("open"); document.body.style.overflow = "";
+      lbImg.src = ""; if (lastFocus) lastFocus.focus(); };
+    document.querySelectorAll(".gallery").forEach(g => {
+      const btns = [...g.querySelectorAll(".gitem")];
+      const items = btns.map(b => { const im = b.querySelector("img"); return {src: im.src, alt: im.alt}; });
+      btns.forEach((b,i) => b.addEventListener("click", () => open(items,i)));
+    });
+    document.getElementById("lbClose").onclick = close;
+    document.getElementById("lbPrev").onclick = e => { e.stopPropagation(); show(idx-1); };
+    document.getElementById("lbNext").onclick = e => { e.stopPropagation(); show(idx+1); };
+    lb.addEventListener("click", e => { if (e.target === lb) close(); });
+    addEventListener("keydown", e => {
+      if (!lb.classList.contains("open")) return;
+      if (e.key === "Escape") close();
+      else if (e.key === "ArrowRight") show(idx+1);
+      else if (e.key === "ArrowLeft") show(idx-1);
+    });
+  }
+
+  /* ---------- rAF scroll loop ---------- */
+  let ticking = false;
+  function loop(){ updateReveal(); ticking = false; }
+  addEventListener("scroll", () => { if(!ticking){ ticking = true; requestAnimationFrame(loop);} }, {passive:true});
+  addEventListener("resize", updateReveal); updateReveal();
+
+  /* ================= CANVAS: hero "liftoff" beam ================= */
+  function setupCanvas(cv){
+    const ctx = cv.getContext("2d");
+    let w,h,dpr;
+    function size(){
+      dpr = Math.min(devicePixelRatio||1, 2);
+      const r = cv.getBoundingClientRect();
+      w = cv.width = r.width*dpr; h = cv.height = r.height*dpr;
+    }
+    size(); addEventListener("resize", size);
+    return {ctx, get w(){return w}, get h(){return h}, get dpr(){return dpr}};
+  }
+
+  const A = [[59,110,246],[123,97,255],[224,138,90]];
+  const lerp = (a,b,t)=>a+(b-a)*t;
+  function mix(t){ // t 0..1 across the 3 accent colors
+    t = clamp(t,0,1)*2; const i = t<1?0:1; const f = t<1?t:t-1;
+    const c1=A[i], c2=A[i+1];
+    return `rgb(${lerp(c1[0],c2[0],f)|0},${lerp(c1[1],c2[1],f)|0},${lerp(c1[2],c2[2],f)|0})`;
+  }
+
+  // HERO: rising particle cone + faint starfield
+  (function heroAnim(){
+    const cv = document.getElementById("c-hero");
+    const S = setupCanvas(cv);
+    let stars=[], parts=[], run=true, t=0;
+    function seed(){
+      stars = Array.from({length:120},()=>({x:Math.random(),y:Math.random(),r:Math.random()*1.2+.2,tw:Math.random()*6}));
+      parts = Array.from({length:reduce?60:150},()=>spawn());
+    }
+    function spawn(){
+      return { x:0, y:Math.random(), spread:(Math.random()-.5), speed:Math.random()*.004+.002, life:Math.random() };
+    }
+    seed(); addEventListener("resize", seed);
+    const io = new IntersectionObserver(es=>es.forEach(e=>{run=e.isIntersecting; if(run&&!reduce)frame();}),{threshold:0});
+    io.observe(cv);
+    function frame(){
+      const {ctx,w,h}=S; t+=0.006;
+      ctx.clearRect(0,0,w,h);
+      ctx.fillStyle="#0B0C0E"; ctx.fillRect(0,0,w,h);
+      // starfield
+      for(const s of stars){
+        const a = .28 + .28*Math.sin(t*3 + s.tw);
+        ctx.fillStyle=`rgba(150,170,255,${a*.5})`;
+        ctx.beginPath(); ctx.arc(s.x*w, s.y*h, s.r*S.dpr, 0, 6.28); ctx.fill();
+      }
+      // rising beam from bottom centre
+      const cx=w*.5, base=h*1.02;
+      ctx.globalCompositeOperation="lighter";
+      for(const p of parts){
+        p.life += p.speed; if(p.life>1){ Object.assign(p, spawn()); p.life=0; }
+        const up = p.life;                       // 0 bottom -> 1 top
+        const y = base - up*h*1.05;
+        const fan = (1-up)*0.06 + 0.16*up;       // widen as it rises
+        const x = cx + p.spread*w*fan + Math.sin(up*6+p.spread*8)*6*S.dpr;
+        const alpha = Math.sin(up*Math.PI)*0.9;
+        const rad = (2.4 - up*1.6)*S.dpr;
+        ctx.fillStyle = mix(up).replace("rgb","rgba").replace(")",`,${alpha})`);
+        ctx.beginPath(); ctx.arc(x,y,Math.max(rad,.4),0,6.28); ctx.fill();
+      }
+      // soft core glow
+      const g=ctx.createRadialGradient(cx,base,0,cx,base,h*0.9);
+      g.addColorStop(0,"rgba(90,120,255,.20)"); g.addColorStop(1,"rgba(11,12,14,0)");
+      ctx.fillStyle=g; ctx.fillRect(0,0,w,h);
+      ctx.globalCompositeOperation="source-over";
+      if(run && !reduce) requestAnimationFrame(frame);
+    }
+    if(reduce){ frame(); } else { frame(); }
+  })();
+
+  // CTA: slow drifting dashes on black
+  (function ctaAnim(){
+    const cv = document.getElementById("c-cta");
+    const S = setupCanvas(cv);
+    let dashes=[], run=true;
+    function seed(){
+      dashes = Array.from({length:reduce?50:110},()=>({
+        x:Math.random(), y:Math.random(), len:Math.random()*10+4,
+        vx:(Math.random()*.0004+.0002), vy:(Math.random()*.0002-.0001),
+        a:Math.random()*.5+.2, hue:Math.random()
+      }));
+    }
+    seed(); addEventListener("resize", seed);
+    const io=new IntersectionObserver(es=>es.forEach(e=>{run=e.isIntersecting; if(run&&!reduce)frame();}),{threshold:0});
+    io.observe(cv);
+    function frame(){
+      const {ctx,w,h,dpr}=S;
+      ctx.clearRect(0,0,w,h); ctx.fillStyle="#0B0C0E"; ctx.fillRect(0,0,w,h);
+      ctx.lineCap="round";
+      for(const d of dashes){
+        d.x+=d.vx; d.y+=d.vy;
+        if(d.x>1.02){d.x=-.02} if(d.y<-.02){d.y=1.02} if(d.y>1.02){d.y=-.02}
+        const x=d.x*w, y=d.y*h;
+        ctx.strokeStyle = mix(d.hue).replace("rgb","rgba").replace(")",`,${d.a})`);
+        ctx.lineWidth = 1.4*dpr;
+        ctx.beginPath(); ctx.moveTo(x,y); ctx.lineTo(x+d.len*dpr, y+d.len*.35*dpr); ctx.stroke();
+      }
+      if(run && !reduce) requestAnimationFrame(frame);
+    }
+    frame();
+  })();
+
+})();
+</script>
+</body>
+</html>
