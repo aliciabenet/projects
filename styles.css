@@ -101,7 +101,7 @@ section{position:relative}
 
 /* ---------- big reveal statement ---------- */
 .statement p{font-size:clamp(1.7rem,4.4vw,3.4rem);font-weight:300;line-height:1.16;
-  letter-spacing:-.02em;max-width:20ch}
+  letter-spacing:-.02em}
 .statement .word{color:var(--muted);transition:color .5s var(--ease)}
 .statement .word.lit{color:var(--ink)}
 .statement .accent.lit{color:transparent;background:var(--grad);-webkit-background-clip:text;background-clip:text}
@@ -256,7 +256,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,12vw,150px)}
 }
 
 /* ==========================================================
-   PROJECT DETAIL PAGE (cuina.html) — same tokens & type
+   PROJECT DETAIL PAGE (lleida1.html) — same tokens & type
    ========================================================== */
 .topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 84%,transparent);
   backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}

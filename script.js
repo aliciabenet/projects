@@ -32,9 +32,7 @@
     el.textContent = "";
     if (reduce){ el.textContent = text; return; }
     const node = document.createTextNode("");
-    const caret = document.createElement("span");
-    caret.className = "caret"; caret.setAttribute("aria-hidden","true");
-    el.append(node, caret);
+    el.append(node);
     let i = 0;
     (function step(){
       node.data = text.slice(0, i);
