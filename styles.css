@@ -191,9 +191,10 @@ section{position:relative}
 .marquee-row{display:flex;align-items:center;gap:16px;width:max-content;animation:slide 42s linear infinite}
 .marquee:hover .marquee-row{animation-play-state:paused}
 @keyframes slide{to{transform:translateX(-50%)}}
-.chip{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;will-change:transform;
-  border:1px solid var(--line);border-radius:999px;padding:13px 22px;font-size:.98rem;color:var(--sub);background:var(--card)}
-.chip b{width:8px;height:8px;border-radius:999px;background:var(--grad);flex:none}
+.chip{display:inline-flex;align-items:center;justify-content:center;flex:none;width:66px;height:66px;
+  border-radius:999px;background:color-mix(in srgb,var(--ink) 6%,transparent);
+  color:color-mix(in srgb,var(--ink) 82%,transparent);will-change:transform}
+.chip svg{width:27px;height:27px;display:block}
 
 /* ---------- practice carousel ---------- */
 .head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:36px;flex-wrap:wrap}

@@ -95,8 +95,22 @@
   /* ---------- marquee + onada de mar (només portada) ---------- */
   const row = document.getElementById("mrow");
   if (row){
-    const words = ["Llum natural","Formigó","Roure","Terratzo","Estuc de calç","Acer","Context","Secció","Pati","Llindar","Rehabilitació","Pedra","Vidre","Proporció"];
-    const set = words.map(w=>`<span class="chip"><b></b>${w}</span>`).join("");
+    const icons = [
+      '<path d="M4 21V11a8 8 0 0 1 16 0v10"/>',                         // arcada
+      '<path d="M3 11 12 4l9 7"/><path d="M5 10v11h14V10"/>',           // casa
+      '<path d="M5 5v14h14z"/>',                                       // escaire
+      '<path d="M12 6 7 21M12 6l5 15"/><circle cx="12" cy="5.2" r="1.6"/>', // compàs
+      '<path d="M4 20h4v-4h4v-4h4v-4h4"/>',                            // escala
+      '<path d="M7 5v14M17 5v14M5 5h14M5 19h14"/>',                    // columnes
+      '<rect x="4" y="4" width="16" height="16" rx="1"/><path d="M12 4v16M4 12h16"/>', // finestra
+      '<path d="M12 4 3 9l9 5 9-5z"/><path d="M3 14l9 5 9-5"/>',       // capes
+      '<path d="M5 19l2.6-.6L19.4 6.6a1.4 1.4 0 0 0-2-2L5.6 16.4z"/>', // llapis
+      '<circle cx="12" cy="9" r="5"/><path d="M12 14v7"/>',           // arbre
+      '<path d="M4 12h16M6 9v6M18 9v6"/>',                            // cota
+      '<rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 11h7v9M14 4v6h6"/>' // planta
+    ];
+    const chip = p => `<span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${p}</svg></span>`;
+    const set = icons.map(chip).join("");
     row.innerHTML = set + set;
     if (!reduce){
       const chips = [...row.children];
