@@ -186,12 +186,12 @@ section{position:relative}
   .lb-prev{left:10px}.lb-next{right:10px}.lb-cap{padding-inline:20px;bottom:14px}}
 
 /* ---------- keyword marquee ---------- */
-.marquee{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+.marquee{overflow:hidden;padding-block:40px;-webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
   mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
-.marquee-row{display:flex;gap:16px;width:max-content;animation:slide 42s linear infinite}
+.marquee-row{display:flex;align-items:center;gap:16px;width:max-content;animation:slide 42s linear infinite}
 .marquee:hover .marquee-row{animation-play-state:paused}
 @keyframes slide{to{transform:translateX(-50%)}}
-.chip{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;
+.chip{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;will-change:transform;
   border:1px solid var(--line);border-radius:999px;padding:13px 22px;font-size:.98rem;color:var(--sub);background:var(--card)}
 .chip b{width:8px;height:8px;border-radius:999px;background:var(--grad);flex:none}
 

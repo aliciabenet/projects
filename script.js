@@ -92,12 +92,28 @@
   }, {threshold:.15});
   document.querySelectorAll(".fade").forEach(el=>fadeObs.observe(el));
 
-  /* ---------- marquee content (només portada) ---------- */
+  /* ---------- marquee + onada de mar (només portada) ---------- */
   const row = document.getElementById("mrow");
   if (row){
     const words = ["Llum natural","Formigó","Roure","Terratzo","Estuc de calç","Acer","Context","Secció","Pati","Llindar","Rehabilitació","Pedra","Vidre","Proporció"];
     const set = words.map(w=>`<span class="chip"><b></b>${w}</span>`).join("");
     row.innerHTML = set + set;
+    if (!reduce){
+      const chips = [...row.children];
+      const AMP = 22, WL = 220;          // amplitud (px) i longitud d'ona
+      let t = 0;
+      (function wave(){
+        t += 0.018;
+        const cx = chips.map(c => { const r = c.getBoundingClientRect(); return r.left + r.width/2; });
+        for (let i = 0; i < chips.length; i++){
+          const p = cx[i]/WL - t;
+          const y = Math.sin(p) * AMP;
+          const s = 1 - (y/AMP) * 0.05;   // les de dalt, lleugerament més grans
+          chips[i].style.transform = `translateY(${y.toFixed(2)}px) scale(${s.toFixed(3)})`;
+        }
+        requestAnimationFrame(wave);
+      })();
+    }
   }
 
   /* ---------- carousel arrows (només portada) ---------- */
